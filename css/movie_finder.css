@@ -1,0 +1,122 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva, Verdana, sans-serif;
+	background-color: rgb(233,233,233);
+}
+.title{
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+	background-color: rgb(19,19,56);
+	padding: 20px;
+	text-align: center;
+}
+/* .full_body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+} */
+.form-input{
+	border: none;
+	outline: none;
+	background-color: white;
+	padding: 10px 20px;
+	border: 1px solid grey;
+	margin-right: 20px;
+	width: 300px;
+}
+form-input:focus{
+	background-color: white;
+}
+.search{
+	border: none;
+	outline: none;
+	background-color: rgb(19,19,56);
+	font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva, Verdana, sans-serif;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+}
+.search-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*margin: 100px;*/
+	margin: 50px;
+}
+.movie-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.card{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	color: white;
+	background-color: rgb(19,19,59);
+	margin: 20px;
+	padding: 30px;
+	width: 1000px;
+}
+
+.movie-title {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.value {
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+.movie-description {
+	padding: 20px;
+	margin-left: 10px;
+}
+
+@media(max-width:1200px){
+	.card{
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		color: white;
+		background-color: rgb(19,19,59);
+		margin: 20px;
+		padding: 30px;
+		width: 700px;
+	}
+	.movie-description img{
+		height: 300px;
+		width: 200px;
+	}
+	.movie-description span{
+		font-size: 16px;
+	}
+}
+
+@media(max-width:820px){
+	.card{
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		align-items: center;
+		color: white;
+		background-color: rgb(19,19,59);
+		margin: 20px;
+		padding: 30px;
+		width: 400px;
+	}
+	.movie-description img{
+		height: 300px;
+		width: 200px;
+	}
+	.movie-description span{
+		font-size: 16px;
+	}
+}
